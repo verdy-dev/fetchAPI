@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantau Covid</title>
+</head>
+<body>
+    <app-bar></app-bar>
+
+    <div class="jumbotron jumbotron-fluid">
+    </div>
+
+    <section class="container bg-dark p-3 rounded data-covid">
+        <div class="text-center text-light">
+            <h3>Data Covid Dunia</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3 bg-warning m-3 p-4 rounded text-center">
+                <h4>Positif</h4>
+                <h1 id="positif-world">----</h1>
+            </div>
+            <div class="col-12 col-md-3 bg-success m-3 p-4 rounded text-center">
+                <h4>Sembuh</h4>
+                <h1 id="sembuh-world">----</h1>
+            </div>
+            <div class="col-12 col-md-3 bg-danger m-3 p-4 rounded text-center">
+                <h4>Meninggal</h4>
+                <h1 id="meninggal-world">----</h1>
+            </div>
+        </div>
+        <div class="text-center text-light">
+            <p>terakhir update </p>
+            <p><strong id="Update-world">-- -- -- ----</strong></p>
+        </div>
+    </section>
+
+    <section class="container">
+
+        <h2 class="my-5 ">Grafik Kasus Covid Dunia</h2>
+
+        <div class="row justify-content-center">
+            <div class="col p-5 chart" >
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container">
+
+        <h2 class="my-5 ">Data Covid Setiap Negara</h2>
+
+        <div class="searchContainer">
+            <input id="searchElement" class="mb-3" type="text" placeholder="Cari berdasarkan nama negara ..." >
+        </div>    
+
+        <div id="responsive-table" >
+            <table class="table table-sm table-striped text-center">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col" >No</th>
+                    <th scope="col" >Negara</th>
+                    <th scope="col" >Positif</th>
+                    <th scope="col" >Sembuh</th>
+                    <th scope="col" >Meninggal</th>
+                    <th scope="col" >Pembaruan</th>
+
+                </tr>
+                </thead>
+                <tbody id="data">
+
+                </tbody>
+            </table>
+        </div>        
+    </section>
+    <br>
+    <br><br><br>
+    <section class="bg-dark"> 
+        <div class="text-center p-3 text-light">
+            <p>Source <a href="https://api.covid19api.com"><strong class="text-light">API</strong></a></p>
+            <p>Photo by <strong><a class="text-light" href="https://unsplash.com/@helloimnik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hello I'm Nik</a></strong> 🎞 on <a class="text-light" href="https://unsplash.com">unsplash </a></p>
+            <p>Created By Verdy Haris Munandar</p>
+            <p>@2020</p>
+        </div>
+    </section>
+
+</body>
+</html>

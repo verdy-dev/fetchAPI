@@ -1,0 +1,24 @@
+{
+  "name": "pantaucovid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.2.0",
+    "style-loader": "^1.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

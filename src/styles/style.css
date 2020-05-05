@@ -1,0 +1,77 @@
+
+#responsive-table {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+
+
+.jumbotron{
+    height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1586001549152-62a311658c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=635&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.data-covid{
+    margin-top: -70px;
+    box-shadow: 10px 10px 15px rgba(0, 0 , 0, 0.2) ;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+
+h2:before,
+h2:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h2:before {
+    right: 0.5em;
+    margin-left:-50%;
+}
+
+h2:after {
+    left: 0.5em;
+    margin-right:-50%;
+}
+
+.searchContainer{
+    display: flex;
+    margin: auto;
+    max-width: 70%;
+}
+
+#searchElement{
+    text-align: center;
+    border: 0;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid black      
+}
+
+.search-container >  input::placeholder {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+/* .chart{
+    width: 100%;
+    overflow: auto;
+
+}
+
+canvas#myChart{
+    width: 1000px;
+    height: 400px;
+} */
