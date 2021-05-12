@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.4"
   },
   "devDependencies": {
     "css-loader": "^3.5.3",
